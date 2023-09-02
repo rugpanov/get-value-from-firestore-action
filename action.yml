@@ -1,0 +1,24 @@
+name: 'Get value from firebase GitHub Action'
+description: 'Get value from firebase GitHub Action'
+inputs:
+  apiKey:
+    description: 'apiKey'
+    required: true
+  authDomain:
+    description: 'authDomain'
+    required: true
+  projectId:
+    description: 'projectId'
+    required: true
+  collectionName:
+    description: 'collectionName'
+    required: true
+  docName:
+    description: 'docName'
+    required: true
+outputs:
+  firestoreValue:
+    description: 'The firestore value'
+runs:
+  using: 'node16'
+  main: 'index.js'
